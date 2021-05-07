@@ -13,6 +13,7 @@ The process of preparing this report involved:
 
 ## Resources
 The dataset: election_results.csv
+
 Software used in this analysis: Python, VS Code
 
 ## Summary of Findings
@@ -22,7 +23,7 @@ Through this analysis, we determined:
   * Charles Casper Stockham
   * Diana DeGette
   * Raymon Anthony Doane
-* **Breakdown of votes by candidate:*
+* **Breakdown of votes by candidate:**
   * Charles Casper Stockham: 23.0% (85,213)
   * Diana DeGette: 73.8% (272,892)
   * Raymon Anthony Doane: 3.1% (11,606)
