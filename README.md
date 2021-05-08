@@ -1,7 +1,7 @@
 # Election-Analysis
 
 ## Project Overview
-This report is an analysis of the results of a recent local congressional election, requested by the Colorado Board of Elections.
+This analysis is an audit of the results of a recent local congressional election, prepared at the request of the Colorado Board of Elections. The goal of the analysis is to determine the total votes cast in the election, the percentage received by each candidate, the breakdown of voter turnout by county, and the winner of the race.
 
 ## Process
 The process of preparing this report involved:
@@ -31,5 +31,7 @@ Through this analysis, we determined:
   * Diana DeGette won the election with 73.8% of the vote and 272,892 votes in total.
 
 ## Project Conclusion
-By using Python and VS Code, we were able to quickly parse the 369,712-line data file and determine all the requested information quickly and with much less effort than such analysis would require in Excel. These tools offer greater computational efficiency and more complex analysis, which make them invaluable for a modern data analyst. 
-In working on this project, I have gained a greater understanding of Python and practiced proper formatting and creating an easily-readable script using comments. I also learned more about the robust array of analytical tools, like the csv module, that are available in VS Code.
+By using Python and VS Code, we were able to quickly parse the 369,712-line data file and extract the requested information with much less effort than such analysis would require in Excel. These tools offer greater computational efficiency and more complex analysis, which make them invaluable for a modern data analyst. 
+In order to provide the Election Board additional analytical flexibility, the script for this analysis is easily adaptable for parsing other election data sets. The key modifications that would need to be made would be:
+1. Adjusting the index value for `candidate_name = row[2]` based on the column in which candidate names are listed in the particular dataset, and
+2. Similarly adjusting the `county_name = row[1]`. Note that index values begin with 0, meaning the first column in the dataset has an index value of 0, the second column has a value of 1, etc.
